@@ -4,23 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <title>Laravel</title>
 
 </head>
 
 <body>
-    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "imagesLoaded": true, "wrapAround": true}'>
-        <img src="https://picsum.photos/seed/one/500/500">
-        <img src="https://picsum.photos/seed/two/500/500">
-        <img src="https://picsum.photos/seed/three/500/500">
-        <img src="https://picsum.photos/seed/four/500/500">
-        <img src="https://picsum.photos/seed/five/500/500">
-        <img src="https://picsum.photos/seed/six/500/500">
+    <div id="app">
 
+        <carousel :autoplay="true">
+
+            <img src="https://picsum.photos/seed/one/640/480">
+            <img src="https://picsum.photos/seed/two/640/480">
+            <img src="https://picsum.photos/seed/three/640/480">
+            <img src="https://picsum.photos/seed/four/640/480">
+            <img src="https://picsum.photos/seed/five/640/480">
+            <img src="https://picsum.photos/seed/six/640/480">
+        </carousel>
     </div>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="/js/app.js"></script>
 
 </body>
 
